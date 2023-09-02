@@ -1,0 +1,92 @@
+.head{
+    padding: 130px 10% 80px;
+    background-color: rgba(7,41,77,.8);
+    color: white;
+    text-align: center;
+}
+.head h1{
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+.head p {
+    font-size: 20px;
+}
+.head p a{
+    color: white;
+}
+@media(max-width:767px){
+    .head{
+        padding: 60px 5%;
+    }
+    .head h1{
+        font-size: 40px;
+        width: 100%;
+    }
+}
+.feat{
+    padding: 50px 5%;
+    background-color: white !important;
+}
+.feat > .bet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media(max-width:767px){
+    .feat > .bet {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+.feat .bet p{
+    color: #606060;
+}
+.feat .bet p span {
+    font-weight: 700;
+    color: #0f2239;
+}
+.feat .bet .sea{
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+}
+.feat .bet .sea input {
+    outline: 0px;
+    border: 0px;
+    height: 25px;
+    width: 220px;
+}
+.feat .bet .sea input::placeholder{
+    font-size: 16px;
+}
+.feat .bet .sea i{
+    color: #7e7e7e;
+}
+.feat .all > div {
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+.feat .all > div .pro .fle .bet h4{
+    color: #0d5ef4;
+}
+.feat .all > div .pro .fle .bet h4 a{
+    color: #0f2239;
+}
+.feat .all > div .pro h2:hover{
+    color: #0d5ef4;
+    cursor: pointer;
+}
+.feat .all > div > img{
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.feat .all > div:hover > img {
+    cursor: pointer;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}

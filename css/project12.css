@@ -1,0 +1,74 @@
+.teacher{
+    padding: 100px 5% 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 20px;
+}
+.teacher > div {
+    box-shadow: 0 0 30px rgba(0,0,0,.1);
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.teacher > div .img{
+    position: relative;
+    overflow: hidden;
+}
+.teacher > div .img img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -ms-border-radius: 10px 10px 0px 0px;
+    -o-border-radius: 10px 10px 0px 0px;
+}
+.teacher > div .img .social {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #0d5ef4;
+    color: white;
+    width: fit-content;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.teacher > div .img .social i.fa-twitter{
+    margin: 0px 15px;
+}
+.teacher > div .text {
+    padding: 30px 0px;
+    text-align: center;
+}
+.teacher > div .text h2{
+    color: #0f2239;
+    margin-bottom: 10px;
+}
+.teacher > div .text p{
+    color: #606060;
+}
+.teacher > div:hover .social{
+    bottom: 50px;
+}
+@media(max-width:767px){
+    .teacher {
+        padding-top: 50px;
+    }
+}

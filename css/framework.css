@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.up {
+    display: none;
+    padding:8px 10px;
+    background-color: inherit;
+    color: #0d5ef4;
+    border: 1px solid #0d5ef4;
+    z-index: 10000;
+    position: fixed;
+    right: 20px;
+    bottom: 15px;
+    cursor: pointer;
+}
+nav {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+    z-index: 100;
+    background-color: white;
+    box-shadow: 0 0 30px rgba(0,0,0,.1);
+}
+@media(min-width:767px){
+    nav {
+        position: fixed;
+    }
+}
+nav .icon{
+    display: none;
+}
+nav a{
+    color: black;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+nav ul {
+    list-style-type: none;
+}
+nav ul.all {
+    display: flex;
+    justify-content: center;
+}
+nav ul.all > li {
+    position: relative;
+    margin: 0px 1rem;
+    padding: 10px 0px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 17px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+nav ul.all > li a span.tot{
+    border-width: 4px;
+    border-color: black transparent transparent;
+    border-style: solid;
+    position: absolute;
+    top: 19px;
+    left: 110%;
+}
+nav ul.all > li.one > a,
+nav ul.all > li.one > a .tot{
+    color: blue;
+    border-color: blue transparent transparent;
+}
+nav ul.all > li ul {
+    position: absolute;
+    left: 0px;
+    top: 35px;
+    width: 150px;
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 30px rgba(0,0,0,.1);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+nav ul.all > li ul li{
+    margin-bottom: 5px;
+    display: none;
+}
+nav ul.all > li:hover ul li {
+    display: block;
+}
+nav ul.all > li:hover ul{
+    padding: 10px 10px 5px;
+}
+nav ul.all > li ul li a:hover{
+    color: blue;
+}
+nav ul.all > li > a::after,
+nav ul.all > li.one > a::after{
+    content: "";
+    height: 2px;
+    width: 0px;
+    background-color: blue;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+nav ul.all > li.one > a::after{
+    width: 100%;
+}
+nav ul.all > li a:hover::after{
+    width: 100%;
+}
+.navbar {
+    z-index: 150;
+    position: absolute;
+    top: 0px;
+    left: -280px;
+    background-color: #0d5ef4;
+    padding: 10px 0px;
+    width: 280px;
+    height: 110%;
+    color: white;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.navbar .close{
+    position: absolute;
+    right: 1em;
+    top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.navbar > ul {
+    margin-top: 20px;
+}
+.navbar ul li a{
+    display: block;
+    color: white;
+    padding: 15px;
+    border-bottom: 1px solid rgb(73, 73, 73);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.navbar ul li ul li a{
+    margin-left: 15px;
+    font-size: 15px;
+}
+.navbar ul li a:hover {
+    background-color: rgba(0,0,0,.2);
+}
+@media(max-width:767px){
+    nav .icon{
+        display: block;
+        padding: 10px;
+        background-color: blue;
+        color: white;
+        cursor: pointer;
+    }
+    nav ul.all{
+        display: none;
+    }
+}

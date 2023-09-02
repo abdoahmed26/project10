@@ -1,0 +1,516 @@
+.plat {
+    background-image: url("imageLearn/bn.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+.plat .learn {
+    padding: 0px 5%;
+    background-image: linear-gradient(100deg,#111D3E 45%,#FFFFFF00 96%);
+    opacity: .9;
+    height: 100%;
+}
+.plat .learn .upper{
+    position: relative;
+    top: 50%;
+    color: white;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.plat .learn .upper p{
+    font-size: 18px;
+}
+.plat .learn .upper .hOne{
+    font-size: 30px;
+    margin: 20px 0px;
+}
+.plat .learn .upper .link{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.plat .learn .upper .link div{
+    padding: 15px 20px;
+    background-color: #0d5ef4;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.plat .learn .upper .link div a{
+    color: white;
+}
+.plat .learn .upper .link div.find{
+    background-color: white;
+}
+.plat .learn .upper .link div.find a{
+    color: #0d5ef4;
+}
+.plat .learn .upper .link div:hover{
+    background-color: white;
+}
+.plat .learn .upper .link div:hover a{
+    color: #0d5ef4;
+}
+.plat .learn .upper .link div.find:hover{
+    background-color: #0d5ef4;
+}
+.plat .learn .upper .link div.find:hover a{
+    color: white;
+}
+@media(max-width:767px){
+    .plat .learn .upper .hOne{
+        font-size: 20px;
+    }
+    .plat .learn .upper p{
+        font-size: 16px;
+    }
+}
+.ins {
+    background-color: #0d5ef4;
+    background-image: url("imageLearn/bg-1.png");
+    background-size: cover;
+    padding: 50px 5%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    z-index: 50;
+}
+.ins > div{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    color: white;
+}
+.ins div img{
+    width: 50px;
+    height: 50px;
+}
+.ins div div h3{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+@media(max-width:767px){
+    .ins{
+        flex-direction: column;
+    }
+    .ins > div{
+        width: fit-content;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+    .ins div img{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+}
+.brow{
+    padding: 50px 5%;
+}
+.brow > h1{
+    margin-bottom: 15px;
+    color: #0f2239;
+}
+.brow > h1,
+.brow > p{
+    text-align: center;
+}
+.brow p{
+    color: #606060;
+}
+.brow .all{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 20px;
+}
+.brow .all .child{
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 0 30px rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.brow .all .child img{
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.brow .all .child div h4{
+    margin-bottom: 15px;
+    font-size: 19px;
+    color: #0f2239;
+}
+.feat {
+    padding: 50px 5%;
+    background-color: #f5f5f5;
+}
+.feat > h1{
+    margin-bottom: 15px;
+    color: #0f2239;
+}
+.feat > h1,
+.feat > p{
+    text-align: center;
+}
+.feat p{
+    color: #606060;
+}
+.feat .all {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(320px,1fr));
+    gap: 20px;
+}
+.feat .all > div{
+    height: fit-content;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+@media(max-width:767px){
+    .feat .all{
+        display: flex;
+        flex-direction: column;
+    }
+    .feat .all > div{
+        width: 100%;
+    }
+}
+.feat .all div > img {
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.feat .all div .pro {
+    padding: 20px;
+}
+.feat .all div .pro .spa span i{
+    color: rgb(255, 182, 6);
+    font-weight: lighter;
+}
+.feat .all div .pro h2{
+    margin: 20px 0px;
+    color: #0f2239;
+    font-family: jost,Sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 34px;
+}
+.feat .all div .pro .prag {
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.feat .all div .fle{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.feat .all div .fle img{
+    width: 35px;
+    height: auto;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.feat .all div .fle .bet{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.feat .all div .fle .bet h4{
+    color: #0f2239;
+}
+.feat .all div .fle .bet h4 a{
+    color: #0d5ef4;
+}
+.num {
+    padding: 80px 5%;
+    background-image: url("imageLearn/Group-3-3.jpg");
+    background-color: #111d3e;
+    color: white;
+}
+.num .all {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.num .all div {
+    width: 25%;
+}
+.num .all div h3{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+@media(max-width:767px){
+    .num .all{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .num .all div {
+        width: 100%;
+        text-align: center;
+    }
+}
+.why{
+    padding: 50px 5%;
+}
+.why .all {
+    display: flex;
+    gap: 50px;
+    align-items:flex-start;
+    height: auto;
+}
+.why .all .img{
+    height: fit-content;
+}
+.why .all .img img{
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.why .all .img img.imgTwo{
+    position: relative;
+    top: -80px;
+    left: 60px;
+}
+.why .all .cho .per{
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+    margin-top: 50px;
+}
+.why .all h1,
+.why .all .cho .per div h3{
+    color: #0f2239;
+    margin-bottom: 10px;
+}
+.why .all .cho .per div p{
+    color: #606060;
+}
+.why .all .cho .per img{
+    max-width: 80px;
+    height: auto;
+}
+@media(max-width:767px){
+    .why{
+        padding: 50px 5% 0px;
+    }
+    .why .all {
+        flex-direction: column;
+        height: fit-content;
+    }
+    .why .all .cho .per{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media(min-width:767px) and (max-width:1099px){
+    .why .all {
+        align-items: center;
+    }
+}
+.test{
+    padding: 50px 5%;
+    background-color: #f5f5f5;
+}
+.test h1{
+    color: #0f2239;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.test > p{
+    text-align: center;
+}
+.test p{
+    color: #606060;
+}
+.test .carousel {
+    margin-top: 30px;
+}
+.test .carousel .chi{
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.test .carousel .chi .quot {
+    color: #0d5ef4;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.test .carousel .chi .star{
+    color: #f0932b;
+    font-size: 14px;
+}
+.test .carousel .chi > p{
+    margin: 20px 0px;
+    line-height: 1.6;
+    text-align: justify;
+}
+.test .carousel .chi .flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.test .carousel .chi .flex img{
+    width: 65px;
+    height: auto;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.test .carousel .chi .flex .web h3{
+    margin-bottom: 10px;
+    color: #0f2239;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    background-color: #0f2239 !important;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: #0d5ef4 !important;
+}
+.blog{
+    padding: 50px 5%;
+}
+.blog h1{
+    text-align: center;
+    color: #0f2239;
+    margin-bottom: 20px;
+}
+.blog > p{
+    text-align: center;
+}
+.blog p {
+    color: #606060;
+}
+.blog .all {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+.blog .all .the {
+    height: fit-content;
+    background-color: white;
+    box-shadow: 0 0 30px rgba(0,0,0,.1);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+@media(max-width:767px){
+    .blog .all {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(320px,1fr));
+    }
+}
+.blog .all .the img{
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.blog .all .the .comp{
+    padding: 20px;
+}
+.blog .all .the .comp .icons{
+    display: flex;
+    gap: 10px;
+}
+.blog .all .the .comp .icons i{
+    color: #0d5ef4;
+}
+.blog .all .the .comp h3{
+    cursor: pointer;
+    font-size: 20px;
+    margin: 10px 0px;
+    color: #0f2239;
+    line-height: 1.5;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.blog .all .the .comp h3:hover{
+    color: #0d5ef4;
+}
+.blog .all .the .comp p.lor{
+    line-height: 1.6;
+}
+.blog .all .the .comp .linkRead {
+    margin-top: 10px;
+}
+.blog .all .the .comp .linkRead a{
+    color: #0d5ef4;
+}
+.blog .all .the .comp .linkRead a:hover{
+    color: #0f2239;
+}
+footer{
+    padding: 20px;
+    text-align: center;
+    color: #d0d0d0;
+    background-color: #081224;
+}

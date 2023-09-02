@@ -1,0 +1,84 @@
+.infor{
+    padding: 127px 5% 50px;
+    display: flex;
+    gap: 30px;
+}
+.infor .mation,
+.infor .form{
+    width: 50%;
+}
+.infor .mation h1,
+.infor .mation h3{
+    color: #0f2239;
+}
+.infor .mation > div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+.infor .mation h3{
+    margin-bottom: 15px;
+}
+.infor .mation p{
+    color: #606060;
+}
+.infor .mation div .iconPh i{
+    color: #0d5ef4;
+    font-size: 45px;
+}
+.infor .form form div {
+    margin-bottom: 20px;
+}
+.infor .form label{
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #0f2239;
+    font-size: 15px;
+    font-weight: bold;
+}
+.infor .form input,
+.infor .form textarea{
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    outline: 0px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.infor .form textarea{
+    height: 100px;
+}
+.infor .form button {
+    padding: 10px 25px;
+    background-color: #0d5ef4;
+    color: white;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+@media(max-width:767px){
+    .infor{
+        padding: 51px 5%;
+        flex-direction: column;
+    }
+    .infor .mation,
+    .infor .form{
+        width: 100%;
+    }
+    .infor .mation{
+        text-align: center;
+    }
+    .infor .mation > div{
+        flex-direction: column;
+    }
+}

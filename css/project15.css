@@ -1,0 +1,396 @@
+/*#021c3b*/
+.head {
+    background-color: #021c3b;
+    padding: 130px 5% 80px;
+}
+.head .icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 80%;
+    margin-bottom: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.head .icons > div:not(:last-child){
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.head .icons .admin img{
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.head .icons .deve i{
+    font-size: 35px;
+    color: #0d5ef4;
+}
+.head .icons > div div p{
+    color: #999;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.head .icons > div div h4 a{
+    color: white;
+    font-weight: 500;
+}
+.head .icons > div.stars span i{
+    color: rgb(255, 182, 6);
+}
+.head .icons > div.stars span:not(:first-child){
+    color: #999;
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
+}
+.head h1{
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+    width: 80%;
+    line-height: 1.6;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+@media(max-width:767px){
+    .head{
+        padding: 60px 5%;
+    }
+    .head h1{
+        font-size: 40px;
+        width: 100%;
+    }
+    .head .icons{
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: space-between;
+    }
+}
+.over {
+    padding: 50px 5%;
+}
+.over > ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.over > ul li {
+    padding: 15px 50px;
+    background-color: #f0eeee;
+    color: #0f2239;
+    cursor: pointer;
+}
+.over > ul li.active{
+    background-color: white;
+    color: #0d5ef4;
+    border-top: 3px solid #0d5ef4;
+}
+.over > div{
+    display: none;
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.over > div.act {
+    display: inline-flex;
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.over > div > div{
+    width: 100%;
+}
+@media(max-width:767px){
+    .over > div{
+        width: 100%;
+    }
+    .over > ul{
+        width: 100%;
+        gap: 10px;
+    }
+}
+.over div p {
+    color: #606060;
+}
+.over div p.praTwo{
+    margin-top: 15px;
+    line-height: 1.6;
+}
+.over div div input{
+    display: none;
+}
+.over div div h3{
+    position: relative;
+    width: fit-content;
+    color: #0f2239;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.over div div h3 .tot {
+    border-width: 4px;
+    border-color: #0f2239 transparent transparent;
+    border-style: solid;
+    position: absolute;
+    top: 10px;
+    left: 103%;
+}
+.over div div ul {
+    display: none;
+    list-style-type: none;
+    width: 100%;
+    border-top: 1px solid #d9e0f1;
+}
+.over div div ul li{
+    background-color: rgba(241,242,248,0.4);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.over div div ul li .spac{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.over div div ul li > i{
+    color: #0d5ef4;
+}
+.over div div ul li .spac .color {
+    color: #333;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.over div div ul li:hover .spac .color{
+    color: #0d5ef4;
+}
+.over div div ul li .spac p i {
+    color: #021c3b;
+}
+.over div div ul li .spac a{
+    color: #fff;
+    padding: 3px 8px;
+    background-color: #00adff;
+    font-size: 14px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.over div div ul li .spac a.ques{
+    background-color: #9672cf;
+}
+.over div div ul li .spac a.min{
+    background-color: #d9e0f1;
+    opacity: 0.8;
+    margin: 0px 5px;
+}
+.instr{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.instr  img{
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.instr p{
+    cursor: pointer;
+    color: #0f2239 !important;
+}
+.instr p:hover{
+    color: #0d5ef4 !important;
+}
+.revi {
+    display: flex;
+    gap: 30px;
+}
+.revi .rat{
+    width: 25%;
+}
+.revi .rat h1{
+    font-size: 90px;
+    text-align: center;
+    color: #333;
+}
+.revi .rat .nagm{
+    text-align: center;
+    width: 100%;
+}
+.revi .rat .nagm span i{
+    color: rgb(255, 182, 6);
+}
+.revi .rat p{
+    text-align: center;
+    margin-top: 10px;
+}
+.revi .secon {
+    width: 100%;
+}
+.revi .secon > div{
+    margin-bottom: 20px;
+}
+.revi .secon div .numero{
+    color: #ccc;
+}
+.revi .secon div i{
+    color: rgb(255, 182, 6);
+    margin: 0px 10px;
+}
+.revi .secon div .tall{
+    width: 70%;
+    height: 13px;
+    background-color: #ccc;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+@media(max-width:767px){
+    .revi {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .revi .rat{
+        width: 100%;
+    }
+}
+.leave {
+    padding: 20px 5% 50px;
+}
+.leave > div {
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.leave > div p{
+    color: #606060;
+    margin: 20px 0px;
+}
+.leave > div div .comm{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.leave > div div #comm{
+    margin-bottom: 20px;
+    height: 150px;
+    width: 70%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.leave > div div #comm:focus {
+    box-shadow: 0 0 30px rgba(0,0,0,.1);
+}
+.leave > div .cont{
+    display: flex;
+    gap: 50px;
+    width: 70%;
+}
+@media(max-width:767px){
+    .leave > div div #comm{
+        width: 100%;
+    }
+    .leave > div .cont{
+        width: 100%;
+    }
+}
+@media(max-width:575px){
+    .leave > div .cont{
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+.leave > div .cont div input {
+    width: 100%;
+    margin-top: 5px;
+    height: 30px;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.leave > div .submit{
+    margin-top: 20px;
+}
+.leave > div .submit button{
+    cursor: pointer;
+    padding: 10px 15px;
+    outline: 0;
+    border: 0;
+    background-color: #0f2239;
+    color: white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.leave > div .submit button:hover{
+    background-color: #0d5ef4;
+}
